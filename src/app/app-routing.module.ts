@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'ejer2',
+    loadChildren: () => import('./ejer2/ejer2.module').then( m => m.Ejer2PageModule)
+  },
+  {
+    path: 'ejer21',
+    loadChildren: () => import('./ejer21/ejer21.module').then( m => m.Ejer21PageModule)
+  },
+  {
+    path: 'ejer3',
+    loadChildren: () => import('./ejer3/ejer3.module').then( m => m.Ejer3PageModule)
+  },
 ];
 
 @NgModule({
