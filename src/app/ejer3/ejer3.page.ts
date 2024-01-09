@@ -1,3 +1,5 @@
+
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -8,7 +10,6 @@ import { Router } from '@angular/router';
 })
 export class Ejer3Page implements OnInit {
   
-  colores = ['#FF5733', '#33FF57', '#5733FF', '#FF3333', '#33FFFF'];
   constructor(private router: Router) { }
   prev() {
     this.router.navigate(['ejer21']);
