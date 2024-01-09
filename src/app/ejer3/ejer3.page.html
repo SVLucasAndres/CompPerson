@@ -1,0 +1,17 @@
+<ion-header >
+  <ion-toolbar >
+    <div class="Header">
+      <ion-icon name="arrow-back-outline" style="width: 10%;" (click)="prev()"></ion-icon>
+    <ion-title style="width: 90%; text-align: center;">Ejercicio 3</ion-title>
+    
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ul>
+    <li *ngFor="let color of colores" [ngStyle]="{'background-color': color}">
+      <app-color colorsitos={{color}}></app-color>
+    </li>
+  </ul>
+</ion-content>
